@@ -51,8 +51,7 @@ export async function POST(req) {
   time travel for each location for "${days}" days with a daily plan including the best time to visit in JSON format.`;
 
   const ai = new GoogleGenAI({
-    // apiKey: process.env.GEMINI_API_KEY,
-    apiKey: "AIzaSyBjzbpLtboNAicE6tpGXrYELk172n2prVE",
+    apiKey: process.env.GEMINI_API_KEY,
   });
 
   const config = {
